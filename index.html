@@ -211,9 +211,9 @@
                 <span>Curtinaz</span>
             </div>
             <h1>
-                <span class="title-1">Este domínio está</span>
+                <span class="title-1" id="domainTitle">Este domínio está</span>
                 <br>
-                <span class="title-2">à venda</span>
+                <span class="title-2">Está à venda!&nbsp</span>
             </h1>
             <p>Entre em contato comigo através do meu whatsapp ou e-mail.</p>
             <div class="buttons">
@@ -284,6 +284,7 @@
             const domainUrl = urlParams.get('domainUrl');
 
             document.querySelector("#websiteUrl").href += domainUrl;
+            document.querySelector("#domainTitle").innerText = domainUrl;
         });
     </script>
 </body>
